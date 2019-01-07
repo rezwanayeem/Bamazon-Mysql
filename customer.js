@@ -29,7 +29,6 @@ function start() {
 function promptProduct() {
 
     connection.query("SELECT * FROM products", function (err, res) {
-        if (err) throw err;
         for (var i = 0; i < res.length; i++) {
                 itemId = res[i].item_id,
                 productName = res[i].product_name,
