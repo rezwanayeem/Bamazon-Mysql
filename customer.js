@@ -34,8 +34,8 @@ function promptProduct() {
                 itemId = res[i].item_id,
                 productName = res[i].product_name,
                 departmentName = res[i].department_name,
-                price = res[i].price,
-                stockQuantity = res[i].stock_quantity;
+                stockQuantity = res[i].stock_quantity,
+                price = res[i].price;
         }
         selectionPrompt();
     });
